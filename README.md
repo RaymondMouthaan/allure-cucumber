@@ -6,3 +6,5 @@ Demo Allure Report Framework
 - `mvn clean test`
 - `mvn allure:report`
 - `mvn allure:serve`
+
+- `mvn clean test allure:report`
