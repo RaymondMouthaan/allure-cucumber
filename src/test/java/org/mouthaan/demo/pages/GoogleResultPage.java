@@ -11,4 +11,6 @@ public class GoogleResultPage {
     public void bla(int i, String result) {
         results.get(i - 1).shouldHave(Condition.text(result));
     }
+
+
 }

@@ -10,5 +10,8 @@ public class GoogleResultSteps {
     @Then("the first result must be {string}")
     public void theFirstResultMustBe(String result) {
         googleResultPage.bla(1, result);
+
     }
+
+
 }

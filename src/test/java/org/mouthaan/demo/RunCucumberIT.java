@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
                 "io.qameta.allure.cucumber4jvm.AllureCucumber4Jvm"
         },
         features = "src/test/resources/features",
-        glue = {"org.mouthaan.demo.steps"}
+        glue = {"org.mouthaan.demo.steps", "org.mouthaan.demo.hooks"}
 )
 public class RunCucumberIT {
 }

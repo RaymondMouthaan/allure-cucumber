@@ -8,13 +8,13 @@ import static org.openqa.selenium.By.name;
 
 public class GoogleSearchPage {
 
-    SelenideElement searchField = $(name("q"));
+    private SelenideElement searchField = $(name("q"));
 
     public void openUrl(String url) {
         open(url);
     }
     
     public void googleSearchFor(String searchString) {
-        searchField.setValue(searchString).pressEnter();
+        searchField.val(searchString).pressEnter();
     }
 }
