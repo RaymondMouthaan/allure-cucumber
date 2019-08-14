@@ -9,7 +9,7 @@ public class Hooks {
 
     @Before
     public void setup() {
-        Configuration.reportsFolder = "target/selenide-screenshots";
+        Configuration.reportsFolder = "target/results/selenide-screenshots";
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(false));
     }
 }
