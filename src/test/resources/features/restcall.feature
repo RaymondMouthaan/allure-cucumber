@@ -5,3 +5,4 @@ Feature: RestCall basics
 
   Scenario: Rest Call POST
     Given: ik een typfout maak in de feature file verschijnt er een paarse balk
+

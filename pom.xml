@@ -28,6 +28,9 @@
         <allure-junit4.version>2.12.1</allure-junit4.version>
         <slf4j-nop.version>1.7.25</slf4j-nop.version>
         <maven-failsafe-plugin.version>3.0.0-M3</maven-failsafe-plugin.version>
+
+        <io.rest-assured-version>4.0.0</io.rest-assured-version>
+
     </properties>
 
     <dependencies>
@@ -98,7 +101,17 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>${io.rest-assured-version}</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
+
 
     <build>
         <plugins>
