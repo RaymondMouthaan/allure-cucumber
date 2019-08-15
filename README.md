@@ -20,3 +20,5 @@ Run Unit Test, Integration Test and Generate Report
 
 All results and reports are created in `target/results`
 
+Copy dependencies
+- mvn dependency:copy-dependencies
