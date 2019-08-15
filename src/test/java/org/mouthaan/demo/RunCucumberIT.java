@@ -2,7 +2,14 @@ package org.mouthaan.demo;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import org.junit.AfterClass;
 import org.junit.runner.RunWith;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
@@ -17,4 +24,15 @@ import org.junit.runner.RunWith;
 )
 public class RunCucumberIT {
 
+        @AfterClass
+        public static void generateEnvironmentProperties() throws IOException {
+                FileOutputStream fos = new FileOutputStream("target/results/allure-results/environment.properties");
+                Properties properties = new Properties();
+                properties.put("Browser", "Safari");
+                properties.put("Browser.version", "12");
+                properties.put("Stand", "Test");
+                properties.store(fos, "Allure Environment Properties");
+                fos.flush();
+                fos.close();
+        }
 }
