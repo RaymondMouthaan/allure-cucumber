@@ -183,6 +183,24 @@
                     <reportDirectory>target/results/allure-report</reportDirectory>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.mouthaan</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>1.1</version>
+                <configuration>
+                    <dockerUrl>http://allure-api.indonesia/send-results</dockerUrl>
+                    <allureResultsDirectory>target/results/allure-results</allureResultsDirectory>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>publish</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
