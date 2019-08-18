@@ -15,4 +15,8 @@ public class RestCallSteps {
     }
 
 
+    @Given("ik een typfout maak in de feature file verschijnt er een paarse balk")
+    public void ikEenTypfoutMaakInDeFeatureFileVerschijntErEenPaarseBalk() throws Exception {
+        restcallDemo.sendPost();
+    }
 }

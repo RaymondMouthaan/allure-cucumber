@@ -172,22 +172,22 @@
                 </dependencies>
             </plugin>
 
-            <plugin>
-                <groupId>io.qameta.allure</groupId>
-                <artifactId>allure-maven</artifactId>
-                <version>${allure-maven.version}</version>
-                <configuration>
-                    <resultsDirectory>results/allure-results</resultsDirectory>
-                    <!-- not sure what reportingOutputDirectory is used for, but its needed -->
-                    <reportingOutputDirectory>target/no-idea</reportingOutputDirectory>
-                    <reportDirectory>target/results/allure-report</reportDirectory>
-                </configuration>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>io.qameta.allure</groupId>-->
+<!--                <artifactId>allure-maven</artifactId>-->
+<!--                <version>${allure-maven.version}</version>-->
+<!--                <configuration>-->
+<!--                    <resultsDirectory>results/allure-results</resultsDirectory>-->
+<!--                    &lt;!&ndash; not sure what reportingOutputDirectory is used for, but its needed &ndash;&gt;-->
+<!--                    <reportingOutputDirectory>target/no-idea</reportingOutputDirectory>-->
+<!--                    <reportDirectory>target/results/allure-report</reportDirectory>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
 
             <plugin>
                 <groupId>org.mouthaan</groupId>
                 <artifactId>allure-maven</artifactId>
-                <version>1.1</version>
+                <version>0.0.1-SNAPSHOT</version>
                 <configuration>
                     <dockerUrl>http://allure-api.indonesia/send-results</dockerUrl>
                     <allureResultsDirectory>target/results/allure-results</allureResultsDirectory>
@@ -201,6 +201,7 @@
                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
     </build>
 
